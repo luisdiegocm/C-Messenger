@@ -68,12 +68,12 @@ pid=fork();
       
 		 // Codigo de mensajes
 			  char cad[20];
-			  printf("/nEscribe el mensaje :");
+			  printf("\nEscribe el mensaje :");
 			  gets(cad);
 			  send(fd2,cad,22,0); 
 			  // Envia el mensaje
 
-			  close(fd2); /* cierra fd2 */
+			  close(fd2); // cierra fd2
 			  
 			  
 			  
@@ -133,7 +133,7 @@ else if (pid==0){
    }	
   
    //buf[numbytes]='\0';
-   printf("\nUsuario1: %s\n",buf); 
+   printf("\nUsuario1: %s",buf); 
 
    // muestra el mensaje del servidor
 
